@@ -1,0 +1,302 @@
+﻿body{
+    background-color: #f6f6f6;
+}
+
+/***** 导航 start *********/
+#qumi_nav {
+    border-radius: 0;
+    background-color: white;
+    border:none;
+    box-shadow: 0px 1px 3px rgba(0,0,0,.2);
+    margin-bottom: 10px;
+}
+#qumi_nav a.navbar-brand {
+    height: 80px;
+    padding: 3px;
+}
+#qumi_nav .navbar-nav>li>a{
+    padding-top:30px;
+    padding-bottom:26px;
+    border-bottom:4px solid white;
+    color: black;
+}
+#qumi_nav .navbar-nav>li>a:hover {
+    color:#ff5252;
+    border-bottom:4px solid #ff5252;
+}
+#qumi_nav .navbar-nav>li>a.active{
+    color:#ff5252;
+    border-bottom:4px solid #ff5252;
+}
+#qumi_nav .navbar-nav>.open>a, .navbar-inverse .navbar-nav>.open>a:focus, .navbar-inverse .navbar-nav>.open>a:hover {
+    color:#ff5252;
+    background-color: white;
+    border-bottom:4px solid #ff5252;
+}
+/***** 导航 end *********/
+/********** 小屏处理 start ************/
+
+@media screen and (max-width: 750px) {
+    #qumi_nav .navbar-toggle {
+        margin-top: 24px;
+        background-color: #aaa;
+        border: none;
+    }
+
+    #qumi_nav .navbar-nav>li>a{
+        padding-top:6px;
+        padding-bottom:2px;
+        border-bottom:4px solid white;
+        color: black;
+    }
+}
+/********** 小屏处理 end ************/
+
+
+
+/****** 工具盒子 start  ******/
+.box {
+    background-color: white;
+    margin-bottom: 10px;
+}
+
+.box > .box-header {
+    position: relative;
+    /*height: 40px;
+    line-height: 40px;*/
+    padding: 6px 10px;
+    border-bottom: 1px solid #f0f0f0;
+}
+.box > .box-header > h4 {
+    margin: 0px;
+    font-size: 16px;
+    line-height: 28px;
+}
+.box > .box-header > .box-tools {
+    position: absolute;
+    right:10px;
+    top: 0px;
+    height: 40px;
+    line-height: 40px;
+    font-size: 14px;
+}
+.box > .box-content {
+    padding: 10px 10px;
+}
+/****** 工具盒子 end  ******/
+
+/****** 域名格子样式 start  ******/
+.domain-grid {
+    border: 1px solid #f0f0f0;
+    height: 80px;
+    width: 100%;
+    margin-bottom: 10px;
+    position: relative;
+}
+.domain-grid:hover {
+    border: 1px solid rgba(0, 0, 0, .3);
+}
+
+.domain-grid > .domain-grid-name {
+    height: 100%;
+    width: 100%;
+    font-size: 16px;
+    overflow: auto;
+    word-break: break-all;
+    display: block;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-align-items: center;
+    align-items: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+}
+.domain-grid > .domain-grid-price {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    color: #ff5252;
+    padding: 5px 10px;
+}
+.domain-grid > .domain-grid-description {
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    width: 100%;
+    color: white;
+    font-size: 14px;
+    line-height: 18px;
+    height: 18px;
+    padding: 0px;
+    overflow: hidden;
+    background-color: rgba(0, 0, 0, .3);
+    z-index: 999;
+    text-align: center;
+}
+@keyframes domain_descriotion_hover {
+    from {
+        top: 62px;
+        height: 18px;
+        background-color: rgba(0, 0, 0, .3);
+    }
+    to {
+        top: 0px;
+        height: 80px;
+        background-color: rgba(0, 0, 0, .8);
+    }
+}
+/* Safari 与 Chrome */
+@-webkit-keyframes domain_descriotion_hover {
+    from {
+        top: 62px;
+        height: 18px;
+        background-color: rgba(0, 0, 0, .3);
+    }
+    to {
+        top: 0px;
+        height: 80px;
+        background-color: rgba(0, 0, 0, .8);
+    }
+}
+.domain-grid > .domain-grid-description:hover
+{
+    top:0px;
+    height: 80px;
+    background-color: rgba(0, 0, 0, .8);
+    padding: 10px;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-align-items: center;
+    align-items: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+
+    animation: domain_descriotion_hover 300ms;
+    -webkit-animation: domain_descriotion_hover 300ms; /* Safari 与 Chrome */
+}
+/****** 域名格子样式 end  ******/
+
+/******* box-filter start **********/
+.box-filter {
+    border: 2px solid #f0f0f0;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+.box-filter-label {
+    background-color: #f0f0f0;
+    color:#6f6f6f;
+    cursor: pointer;
+    font-weight: 400;
+}
+
+.box-filter-label:hover {
+    background-color: #337ab7;
+    color:white;
+}
+
+.box-filter-active {
+    background-color: #337ab7;
+    color:white;
+    cursor: pointer;
+}
+/******* box-filter end **********/
+
+/********** 登录注册 start *********/
+div.login {
+    border-radius: 4px;
+    box-shadow: 0 2px 12px 0 rgba(0,0,0,.1);
+    background-color: #fff;
+    overflow: hidden;
+    color: #303133;
+    border: 1px solid #f0f0f0;
+    margin-top:10%;
+    margin-bottom: 20%;
+}
+/********** 登录注册 end *********/
+
+/*********** console nav start **************/
+#console_nav {
+    background-color: white;
+}
+#console_nav > .nav > li {
+    border-left: 5px solid white;
+}
+#console_nav > .nav > li:hover {
+    border-left: 5px solid #ff5252;
+    background-color: #eee;
+}
+
+#console_nav > .nav > li.active {
+    border-left: 5px solid #ff5252;
+    background-color: #eee;
+}
+/*********** console nav end **************/
+
+/*********** qm start **********/
+.qm-callout {
+    padding: 10px;
+    margin: 30px 0;
+    background-color: #f6f6f6;
+    border-left: 5px solid #ff5252;
+}
+/*********** qm end **********/
+
+footer{
+    border-top: 1px solid #f0f0f0;
+    padding-top: 10px;
+    margin-top: 20px;
+    text-align: center
+}
+
+.park-mibiao-name {
+    color:#0f0f0f;
+}
+#breadcrumb{
+    margin-bottom: 10px;
+}
+#breadcrumb > .breadcrumb {
+    margin-bottom: 0px;
+    background-color: white;
+}
+.inline-right{
+    display: inline-block;
+    float: right;
+}
+
+.captcha {
+    padding: 0px;
+}
+
+.loading {
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, .2);
+    background-image: url("../images/loading.gif");
+    background-repeat:no-repeat;
+    background-attachment:fixed;
+    background-position:center;
+    z-index: 10000;
+    /*保持div内元素水平垂直居中*/
+    /*display: flex;
+    justify-content:center;
+    align-items:Center;*/
+}
+
+
+.modal-info {
+    height: 240px;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+.theme-check {
+    border-width:3px;
+    border-style: solid;
+}
+
+.theme-checked {
+    border: 3px solid #1064AA;
+}
