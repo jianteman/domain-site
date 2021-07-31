@@ -53,6 +53,10 @@
 /********** 小屏处理 end ************/
 
 
+.bmc-logo {
+    width:230px;
+    height:auto!important
+}
 
 /****** 工具盒子 start  ******/
 .box {
