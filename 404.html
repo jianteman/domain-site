@@ -193,7 +193,7 @@
             <h1>404</h1>
             <p>Oops! It looks like you're lost...</p>
             <p>The Page you're looking for doesn't exist or another error occurred.</p>
-            <p style="color: red;">The page will forward to the home page after 3".</p>
+            <p style="color: red;" id="count">3"</p>
             <p><a href="http://mi.mytel.cn">mi.mytel.cn</a></p>
         </div>
         <div style="display: none;">
@@ -202,7 +202,17 @@
     </section>
 
     <script language="javascript" type="text/javascript">
-        setTimeout("javascript:location.href='http://mi.mytel.cn'", 3000); 
+        var second = 3; 
+        var count = document.getElementById("count");
+        setInterval("redirect()", 1000); 
+        function redirect(){ 
+            --second;
+            if(second <= 0) {
+                location.href='http://mi.mytel.cn';
+                return;
+            } 
+            count.innerText= second + '"';   
+        } 
     </script>
 </body>
 
