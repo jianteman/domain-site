@@ -27,6 +27,23 @@
     transition: all 0.3s ease;
 }
 
+
+.box2x2 {
+    height: 97px;
+    cursor: pointer;
+    border-radius: 4px;
+    padding: 0px 30px 0px 30px;
+    background-color: #fff;
+    border-radius: 4px;
+    border: 1px solid #e4ecf3;
+    margin: 15px 0 0 0;
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+} 
+
+
 .box3 {
     height: 186px;
     cursor: pointer;
@@ -41,6 +58,7 @@
     -o-transition: all 0.3s ease;
     transition: all 0.3s ease;
 }
+
 
 .box2:hover {
     transform: translateY(-6px);
@@ -59,6 +77,11 @@
     float: left;
     display: block;
     margin-right: 10px;
+}
+.xe-comment-entry p {
+    font-size: 15px;
+    font-family: Arimo,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-weight: bold;
 }
 .xe-comment {
     transform: translateY(-50%);
